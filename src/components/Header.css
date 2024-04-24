@@ -1,0 +1,85 @@
+.carousel-wrapper {
+    margin-top: 50px; /* Adjust margin to position below navigation bar */
+  }
+  
+  .carousel-wrapper .carousel {
+    border-radius: 8px; /* Add border radius to the carousel */
+    overflow: hidden;
+  }
+  
+  .carousel-wrapper .slide {
+    position: relative;
+    width: 100%;
+  }
+  
+  .carousel-wrapper .slide img {
+    width: 100%;
+    height: 40%;
+    object-fit: cover; /* Ensure the image covers the slide */
+  }
+
+  
+  .carousel-wrapper .slide .nn1 {
+    position: absolute;
+    top: 50%;
+    left: 50px; /* Adjust left position as needed */
+    transform: translate(0, -50%); /* Center vertically */
+    color: #130d0d;
+    text-align: left;
+  }
+  .carousel-wrapper .slide .nn2 {
+    position: absolute;
+    top: 35% !important;
+    left: 50px; /* Adjust left position as needed */
+    transform: translate(0, -50%); /* Center vertically */
+    color: #130d0d;
+    text-align: left;
+  }
+  
+  .carousel-wrapper .slide .nn1 p {
+    font-size: 30px;
+    line-height: 1.5;
+  }
+  
+  .carousel-wrapper .slide .nn1 button {
+    background-color: #4ae783; /* Adjust button background color */
+    color: #181414;
+    border: none;
+    padding: 10px 20px;
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: 4px;
+    border-radius: 8px;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .carousel-wrapper .slide .nn1 {
+      left: 30%;
+      transform: translate(-50%, -50%); /* Center horizontally and vertically */
+      max-width: 80%; /* Limit maximum width */
+    }
+     
+    .carousel-wrapper .slide .nn1 p {
+        font-size: 10px;
+        line-height: 1.5;
+    }
+    
+    .carousel-wrapper .slide .nn1 button {
+        background-color: #4ae783; /* Adjust button background color */
+        color: #181414;
+        border: none;
+        padding: 10px 20px;
+        font-size: 10px;
+        cursor: pointer;
+        margin-top: 5px;
+        border-radius: 3px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .carousel-wrapper {
+      margin-top: 0; /* Remove margin on mobile devices */
+    }
+
+  }
+  

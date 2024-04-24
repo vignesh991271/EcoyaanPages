@@ -1,0 +1,40 @@
+
+.content-with-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  
+  
+  .text {
+    width: 50%;
+  }
+  
+  .media {
+    width: 50%;
+  }
+  .media img {
+    max-width: 100%;
+    height: auto; 
+  }
+
+  
+.media video {
+    width: 80%; 
+    height: auto; 
+  }
+  
+  @media screen and (max-width: 767px) {
+    .content-with-media {
+      flex-direction: column;
+    }
+  
+    .text,
+    .media {
+      width: 100%;
+    }
+  }
+  
